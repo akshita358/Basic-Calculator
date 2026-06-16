@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="themechange">
+            <span class="theme">Dark Mode</span>
+            <label class="change">
+                <input type="checkbox" id="toggle" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+   
+    <h1>CALCULATOR</h1>
+    <div class="input">
+        <input type="number" id="num1" placeholder="Enter the first number" required>
+        <input type="number" id="num2" placeholder="Enter the second number" required>
+    </div>
+
+    <div class="buttons">
+        <button class="operation" data-operation="addition">+</button>
+        <button class="operation" data-operation="subtraction">-</button>
+        <button class="operation" data-operation="multiplication">*</button>
+        <button class="operation" data-operation="division">/</button>
+    </div>
+    <div class="answer">
+        <span class="answerlabel">Answer</span>
+        <div id="ans">0</div>
+    </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
