@@ -1,20 +1,15 @@
-// Selecting elements
 const num1 = document.getElementById("num1");
 const num2 = document.getElementById("num2");
 const answer = document.getElementById("ans");
 const buttons = document.querySelectorAll(".operation");
-
 const toggle = document.getElementById("toggle");
 const themeText = document.querySelector(".theme");
 const root = document.documentElement;
 
-// Calculator operations
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         let first = parseFloat(num1.value);
         let second = parseFloat(num2.value);
-
-        // Check if inputs are empty
         if (isNaN(first) || isNaN(second)) {
             answer.textContent = "Enter both numbers";
             return;
@@ -52,7 +47,6 @@ buttons.forEach(button => {
     });
 });
 
-// Theme toggle
 toggle.addEventListener("change", () => {
     if (toggle.checked) {
         root.setAttribute("data-theme", "dark");
